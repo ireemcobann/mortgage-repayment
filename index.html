@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Empty</title>
+    <link rel="stylesheet" href="assets/css/empty.css" />
+    <script
+      src="https://kit.fontawesome.com/2d1d2f860d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/empty.js" defer></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="header">
+          <h2>Mortgage Calculator</h2>
+          <a class="clearBtn" href="#">Clear All</a>
+        </div>
+        <div class="mortgage-content">
+          <div class="mortgage-amount-euro">
+            <h4>Mortgage Amount</h4>
+            <div class="amount-input">
+              <img src="assets/images/Prefix.svg" alt="" />
+              <input type="number" class="amount" />
+            </div>
+            <p id="amountError" class="error">This field is required</p>
+          </div>
+          <div class="mortgage-term-rate">
+            <div class="mortgage-amount">
+              <h4>Mortgage Term</h4>
+              <div class="amount-input">
+                <input type="number" class="term" />
+                <img src="assets/images/years.svg" alt="" />
+              </div>
+              <p id="yılError" class="error">This field is required</p>
+            </div>
+            <div class="mortgage-amount">
+              <h4>Interest Rate</h4>
+              <div class="amount-input">
+                <input type="number" class="rate" />
+                <img src="assets/images/yüzde.svg" alt="" />
+              </div>
+              <p id="oranError" class="error">This field is required</p>
+            </div>
+          </div>
+          <div class="mortgage-last">
+            <h4>Mortgage Type</h4>
+            <div class="inputs">
+              <div class="type-input">
+                <input type="checkbox" />
+                <input type="text" placeholder="Repayment" />
+              </div>
+              <div class="type-input">
+                <input type="checkbox" />
+                <input type="text" placeholder="Interest Only" />
+              </div>
+            </div>
+          </div>
+          <div class="calculate">
+            <button class="resultBtn">
+              <i class="fa-solid fa-calculator"></i> Calculate Repayments
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer">
+          <img src="assets/images/footerimg.svg" alt="" />
+          <h2>Results shown here</h2>
+          <p>
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

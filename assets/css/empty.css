@@ -1,0 +1,418 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  padding: 32px 24px;
+}
+.header {
+  margin-bottom: 24px;
+}
+.header h2 {
+  font-size: var(--font-sizetext-preset-2);
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #133041;
+}
+
+.header a {
+  font-size: var(--font-sizetext-preset-4);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #4e6e7e;
+}
+.mortgage-amount-euro h4 {
+  font-size: var(--font-sizetext-preset-4);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #4e6e7e;
+  margin-bottom: 12px;
+}
+.mortgage-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+.mortgage-amount:first-child {
+  margin-bottom: 24px;
+}
+.mortgage-amount h4 {
+  font-size: var(--font-sizetext-preset-4);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #4e6e7e;
+  margin-bottom: 12px;
+}
+.amount-input {
+  border: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid #6b94a8;
+  border-radius: 5px;
+}
+
+.amount-input input {
+  height: 44px;
+  width: 100%;
+  border: none;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.mortgage-last h4 {
+  font-size: var(--font-sizetext-preset-4);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #4e6e7e;
+  margin-bottom: 12px;
+}
+
+.type-input {
+  display: flex;
+  gap: 12px;
+  border: 1px solid #6b94a8;
+  padding: 12px 16px;
+  border-radius: 5px;
+}
+
+.type-input input:last-child {
+  border: none;
+  font-size: var(--font-sizetext-preset-3);
+  font-weight: 700;
+  line-height: 22.5px;
+  text-align: left;
+  color: #133041;
+}
+.calculate button {
+  background-color: #d8db2f;
+  padding: 16px 46.5px;
+  font-size: var(--font-sizetext-preset-3);
+  font-weight: 700;
+  line-height: 22.5px;
+  text-align: center;
+  color: #133041;
+  border: none;
+  border-radius: 999px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.calculate button i {
+  margin-right: 12px;
+}
+
+.footer-container {
+  background-color: #133041;
+  padding: 32px 24px;
+}
+.footer img {
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer h2 {
+  font-size: var(--font-sizetext-preset-2);
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer p {
+  font-size: var(--font-sizetext-preset-4);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #9abed5;
+}
+.result-screen {
+  margin-top: 32px;
+  padding: 32px;
+  background-color:#0d2431;
+}
+.result-screen h2 {
+font-size: var(--font-sizetext-preset-4);
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #9ABED5;
+margin-bottom: 8px;
+margin-top: 16px;
+}
+.result-screen p {
+font-size: var(--font-sizetext-preset-1);
+font-weight: 700;
+line-height: 70px;
+text-align: left;
+color: #D8DB2F;
+
+
+}
+hr {
+  border: 1px solid #9ABED540;
+}
+.error {
+  display: none;
+  color: red;
+  margin-top: 12px;
+}
+.type-input.checked {
+  background-color: #D8DB2F26;
+}
+
+.type-input.checked input[type="text"] {
+  color: #D8DB2F;
+}
+
+@media only screen and (min-width: 767px) {
+  .container {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  .header h2 {
+    font-size: var(--font-sizetext-preset-2);
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+  }
+  .background {
+    background-color: #e4f4fd;
+    padding: 40px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mortgage-term-rate {
+    display: flex;
+    gap: 24px;
+  }
+
+  .mortgage-amount-euro h4 {
+    font-size: var(--font-sizetext-preset-4);
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #4e6e7e;
+    margin-bottom: 12px;
+  }
+  .mortgage-amount {
+    width: 291px;
+  }
+
+  .calculate button {
+    margin: 0;
+  }
+
+  .footer-container {
+    background-color: #133041;
+    padding: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .footer {
+    background-color: #133041;
+    height: 530px;
+  }
+  .result-screen {
+    padding: 32px;
+  }
+  .result-screen h2 {
+font-size: var(--font-sizetext-preset-4);
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #9ABED5;
+margin-bottom: 8px;
+  }
+  .result-screen p {
+font-size: var(--font-sizetext-preset-1);
+font-weight: 700;
+line-height: 70px;
+text-align: left;
+color: #D8DB2F;
+margin-bottom: 32px;
+
+  }
+hr {
+    border: 1px solid #9ABED540;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .background {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
+  }
+
+  .container {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 40px;
+  }
+
+  .footer {
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .footer img {
+    padding-top: 112px;
+  }
+  .footer-container {
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .header {
+    display: flex;
+  }
+
+}
+
