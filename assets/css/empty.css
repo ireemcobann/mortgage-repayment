@@ -211,6 +211,13 @@ table {
   padding: 12px 16px;
   border-radius: 5px;
 }
+.type-input:active {
+  background-color: #d8db2f26;
+}
+
+input[type="radio"]:active {
+  background-color: #d8db2f;
+}
 
 .type-input input:last-child {
   border: none;
@@ -266,28 +273,31 @@ table {
 .result-screen {
   margin-top: 32px;
   padding: 32px;
-  background-color:#0d2431;
+  background-color: #0d2431;
+  border-top: 4px solid #D8DB2F;
+  border-radius: 8px;
 }
 .result-screen h2 {
-font-size: var(--font-sizetext-preset-4);
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-color: #9ABED5;
-margin-bottom: 8px;
-margin-top: 16px;
+  font-size: var(--font-sizetext-preset-4);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #9abed5;
+  margin-bottom: 8px;
+  margin-top: 16px;
 }
 .result-screen p {
-font-size: var(--font-sizetext-preset-1);
-font-weight: 700;
-line-height: 70px;
-text-align: left;
-color: #D8DB2F;
-
-
+  font-size: var(--font-sizetext-preset-1);
+  font-weight: 700;
+  line-height: 70px;
+  text-align: left;
+  color: #d8db2f;
+}
+.result-screen p:last-child {
+  color: white;
 }
 hr {
-  border: 1px solid #9ABED540;
+  border: 1px solid #9abed540;
 }
 .error {
   display: none;
@@ -295,11 +305,11 @@ hr {
   margin-top: 12px;
 }
 .type-input.checked {
-  background-color: #D8DB2F26;
+  background-color: #d8db2f26;
 }
 
 .type-input.checked input[type="text"] {
-  color: #D8DB2F;
+  color: #d8db2f;
 }
 
 @media only screen and (min-width: 767px) {
@@ -360,33 +370,34 @@ hr {
     padding: 32px;
   }
   .result-screen h2 {
-font-size: var(--font-sizetext-preset-4);
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-color: #9ABED5;
-margin-bottom: 8px;
+    font-size: var(--font-sizetext-preset-4);
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #9abed5;
+    margin-bottom: 8px;
   }
   .result-screen p {
-font-size: var(--font-sizetext-preset-1);
-font-weight: 700;
-line-height: 70px;
-text-align: left;
-color: #D8DB2F;
-margin-bottom: 32px;
-
+    font-size: var(--font-sizetext-preset-1);
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    color: #d8db2f;
+    margin-bottom: 32px;
   }
-hr {
-    border: 1px solid #9ABED540;
+  .result-screen p:last-child {
+    color: white;
+  }
+  hr {
+    border: 1px solid #9abed540;
   }
 }
-
 
 @media only screen and (min-width: 1024px) {
   .background {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
   }
 
@@ -413,6 +424,21 @@ hr {
   .header {
     display: flex;
   }
-
+  .result-screen p {
+    font-size: var(--font-sizetext-preset-1);
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .result-screen p:last-child {
+    color: white;
+    font-size: var(--font-sizetext-preset-2);
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
 }
-
